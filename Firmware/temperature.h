@@ -190,8 +190,6 @@ void thermal_model_save_settings();
 void thermal_model_autotune(int16_t temp = 0, bool selftest = false);
 bool thermal_model_autotune_result(); // return true if the last autotune was complete and successful
 
-#if (defined(FANCHECK) && defined(TACH_0) && (TACH_0 > -1))
-
 #ifdef THERMAL_MODEL_DEBUG
 void thermal_model_log_enable(bool enable);
 #endif
