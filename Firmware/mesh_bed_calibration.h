@@ -13,11 +13,17 @@
 #define BED_Yn (213.4f - BED_ZERO_REF_Y) //205
 
 #else
-
+/**
 #define BED_X0 (13.f - BED_ZERO_REF_X)
 #define BED_Y0 (8.4f - BED_ZERO_REF_Y)
 #define BED_Xn (216.f - BED_ZERO_REF_X)
 #define BED_Yn (202.4f - BED_ZERO_REF_Y)
+ */
+
+#define BED_X0 (9.f - BED_ZERO_REF_X) // 12 - 4 + 1
+#define BED_Y0 (11.4f - BED_ZERO_REF_Y) // 7 - 4 + 8.4
+#define BED_Xn (212.f - BED_ZERO_REF_X) // 215 - 4 + 1
+#define BED_Yn (207.4f - BED_ZERO_REF_Y) // 203 - 4 + 8.4
 
 #endif //not HEATBED_V2
 
